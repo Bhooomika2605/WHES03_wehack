@@ -18,11 +18,10 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-# Initialize GenAI client (replace with your actual API key)
-genai.configure(api_key="AIzaSyDMLx7XULAkS8gxhU2fXERJxHnzlt7BauU")
+genai.configure(api_key="{cant share on github}")
 
 # Initialize MongoDB connection
-mongo_client = MongoClient("mongodb+srv://survebhoomika:cUQJwuQwOatzUNQR@cluster0.vc0e9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongo_client = MongoClient("mongodb+srv://survebhoomika:<password>@cluster0.vc0e9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = mongo_client["reverse_hiring"]
 users_collection = db["users"]
 companies_collection = db["companies"]
